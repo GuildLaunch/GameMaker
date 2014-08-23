@@ -17,7 +17,7 @@
     <background>background\bg_Space2</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_Player</object>
     <object>objects\obj_Wall</object>
