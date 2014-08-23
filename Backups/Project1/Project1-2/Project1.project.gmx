@@ -24,12 +24,13 @@
     <object>objects\obj_gameBoundary</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_TwitterPump</object>
+    <object>objects\obj_ScoreBoard</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41874.9113220139</constant>
+    <constant name="GM_build_date">41874.9281167477</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
