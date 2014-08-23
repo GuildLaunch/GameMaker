@@ -49,40 +49,41 @@
           <argument>
             <kind>1</kind>
             <string>horizontal_value = gamepad_axis_value(0,gp_axislh);
-scaled_horizontal_value = spd*horizontal_value;
+scaled_horizontal_value = round(spd*horizontal_value);
 
 vertical_value = gamepad_axis_value(0,gp_axislv);
-scaled_vertical_value = spd*vertical_value;
+scaled_vertical_value = round(spd*vertical_value);
 
 
 
 ///show_debug_message(scaled_vertical_value);
 
 draw_text(50, 0, gamepad_axis_value(0,gp_axislh));
-if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2)
+
+if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt; -0.2 || vertical_value &lt; -0.2)
 {
-
-if (scaled_vertical_value &gt; 0)
-{
-    ver_min = 1;
-}else{
-    ver_min = -1;
-}
-
-if (scaled_horizontal_value &gt; 0)
-{
-    hor_min = 1;
-}else{
-    hor_min = -1;
-}
-
-
-    if place_free(x+1,y) &amp;&amp; place_free(x+scaled_horizontal_value,y){
+    if place_free(x+scaled_horizontal_value,y) &amp;&amp; place_free(x,y+scaled_vertical_value){
             x+=scaled_horizontal_value;
-    }
-    
-    if place_free(x+,y) &amp;&amp; place_free(x+scaled_horizontal_value,y){
-            x+=scaled_horizontal_value;
+            y+=scaled_vertical_value;
+    }else if place_free(x+1,y) || place_free(x,y+1){
+         while(!place_free(x+scaled_horizontal_value,y) &amp;&amp; scaled_horizontal_value != 0){
+            if (scaled_horizontal_value &gt; 0)
+            {
+                scaled_horizontal_value-=1;
+            }else{
+                scaled_horizontal_value+=1;
+            }
+         }
+         while(!place_free(x,y+scaled_vertical_value) &amp;&amp; scaled_vertical_value != 0){
+            if (scaled_vertical_value &gt; 0)
+            {
+                scaled_vertical_value-=1;
+            }else{
+                scaled_vertical_value+=1;
+            }
+         }
+         x+=floor(scaled_horizontal_value);
+         y+=floor(scaled_vertical_value);
     }
 }
 </string>
