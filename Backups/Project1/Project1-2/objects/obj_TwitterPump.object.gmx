@@ -85,7 +85,7 @@ currentPlayerBoost="0";
       {
       r_str = ds_map_find_value(async_load, "result");
       currentPlayerBoost = r_str;
-      rateOfFire = rateOfFireInit - real(currentPlayerBoost);
+      rateOfFire = rateOfFireInit - 0real(currentPlayerBoost);
       }
    else
       {

@@ -29,7 +29,7 @@
 globalvar rateOfFireInit;
 globalvar noShots;
 rateOfFireInit = 10;
-rateOfFire = 10;
+rateOfFire = rateOfFireInit;
 noShots = 0;
 spd=10;
 </string>
