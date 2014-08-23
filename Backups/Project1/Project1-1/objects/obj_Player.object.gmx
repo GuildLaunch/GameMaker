@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd=10;
+            <string>globalvar rateOfFire;
+globalvar noShots;
+rateOfFire = 10;
+noShots = 0;
+spd=10;
 </string>
           </argument>
         </arguments>
@@ -85,6 +89,16 @@ if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt
          x+=floor(scaled_horizontal_value);
          y+=floor(scaled_vertical_value);
     }
+}
+
+if (noShots &lt; rateOfFire)
+{
+noShots+=1;
+}
+else
+{
+noShots = 0;
+instance_create(x+10,y+16,spr_laser);
 }
 </string>
           </argument>
