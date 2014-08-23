@@ -17,10 +17,10 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_Laser</object>
-    <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_Enemy</object>
     <object>objects\obj_Spawn</object>
   </objects>
