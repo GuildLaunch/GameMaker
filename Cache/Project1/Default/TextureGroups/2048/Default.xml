@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureGroup>
+  <texture scale="1">Default_0.png</texture>
+  <tpe x="2" y="2" tpage="Default_0" entry="0">spr_Player_0.tpe</tpe>
+  <tpe x="70" y="2" tpage="Default_0" entry="1">spr_Player_1.tpe</tpe>
+  <tpe x="138" y="2" tpage="Default_0" entry="2">spr_Player_2.tpe</tpe>
+  <tpe x="2" y="58" tpage="Default_0" entry="3">spr_Player_3.tpe</tpe>
+  <tpe x="70" y="58" tpage="Default_0" entry="4">spr_Player_4.tpe</tpe>
+  <tpe x="138" y="58" tpage="Default_0" entry="5">spr_Player_5.tpe</tpe>
+  <tpe x="2" y="114" tpage="Default_0" entry="6">spr_Player_6.tpe</tpe>
+  <tpe x="70" y="114" tpage="Default_0" entry="7">spr_Player_7.tpe</tpe>
+  <tpe x="138" y="114" tpage="Default_0" entry="8">spr_Player_8.tpe</tpe>
+  <tpe x="2" y="170" tpage="Default_0" entry="9">spr_Player_9.tpe</tpe>
+  <tpe x="70" y="170" tpage="Default_0" entry="10">spr_Player_10.tpe</tpe>
+  <tpe x="138" y="170" tpage="Default_0" entry="11">spr_Player_11.tpe</tpe>
+  <tpe x="2" y="226" tpage="Default_0" entry="12">spr_Player_12.tpe</tpe>
+  <tpe x="70" y="226" tpage="Default_0" entry="13">spr_Player_13.tpe</tpe>
+  <tpe x="138" y="226" tpage="Default_0" entry="14">spr_Player_14.tpe</tpe>
+  <tpe x="2" y="282" tpage="Default_0" entry="15">spr_Player_15.tpe</tpe>
+  <tpe x="70" y="282" tpage="Default_0" entry="16">spr_Player_16.tpe</tpe>
+  <tpe x="138" y="282" tpage="Default_0" entry="17">spr_Player_17.tpe</tpe>
+  <tpe x="2" y="338" tpage="Default_0" entry="18">spr_Player_18.tpe</tpe>
+  <tpe x="2" y="394" tpage="Default_0" entry="19">spr_Player_19.tpe</tpe>
+  <tpe x="2" y="450" tpage="Default_0" entry="20">spr_Player_20.tpe</tpe>
+  <tpe x="70" y="338" tpage="Default_0" entry="21">spr_Player_21.tpe</tpe>
+  <tpe x="138" y="338" tpage="Default_0" entry="22">spr_Player_22.tpe</tpe>
+  <tpe x="70" y="394" tpage="Default_0" entry="23">spr_Wall_0.tpe</tpe>
+</TextureGroup>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="eVertical" Width="1184" Height="687" Distance="587">
+  <Left>
+    <Panel Type="eNone">
+      <Window Type="Source">
+        <Tabs tab0="gml_Object_obj_Player_Create_0" sel="gml_Object_obj_Player_Step_0" />
+      </Window>
+    </Panel>
+  </Left>
+  <Right>
+    <Panel Type="eHorizontal" Width="593" Height="687" Distance="339">
+      <Left>
+        <Panel Type="eNone">
+          <Window Type="Globals" />
+        </Panel>
+      </Left>
+      <Right>
+        <Panel Type="eNone">
+          <Window Type="Locals" />
+        </Panel>
+      </Right>
+    </Panel>
+  </Right>
+</Panel>
