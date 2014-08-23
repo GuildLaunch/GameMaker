@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>timer=60;
 globalvar currentPlayerBoost;
-currentPlayerBoost="0";
+currentPlayerBoost=0;
 </string>
           </argument>
         </arguments>

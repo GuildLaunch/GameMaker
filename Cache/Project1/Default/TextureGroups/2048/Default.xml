@@ -6,13 +6,13 @@
   <tpe x="2" y="1194" tpage="Default_0" entry="1">spr_Player_1.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="0">spr_Player_0.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="2">spr_Player_2.tpe</tpe>
-  <tpe x="498" y="1194" tpage="Default_0" entry="6">spr_enemy_1.tpe</tpe>
-  <tpe x="2" y="1450" tpage="Default_0" entry="5">spr_enemy_0.tpe</tpe>
-  <tpe x="2" y="1450" tpage="Default_0" entry="7">spr_enemy_2.tpe</tpe>
-  <tpe x="834" y="1034" tpage="Default_0" entry="9">spr_Spawn_1.tpe</tpe>
-  <tpe x="2" y="1682" tpage="Default_0" entry="8">spr_Spawn_0.tpe</tpe>
-  <tpe x="2" y="1682" tpage="Default_0" entry="10">spr_Spawn_2.tpe</tpe>
-  <tpe x="990" y="778" tpage="Default_0" entry="3">spr_Wall_0.tpe</tpe>
-  <tpe x="886" y="1034" tpage="Default_0" entry="4">spr_gameBoundary_0.tpe</tpe>
-  <tpe x="498" y="1426" tpage="Default_0" entry="11">spr_laser_0.tpe</tpe>
+  <tpe x="498" y="1194" tpage="Default_0" entry="4">spr_Enemy_1.tpe</tpe>
+  <tpe x="2" y="1450" tpage="Default_0" entry="3">spr_Enemy_0.tpe</tpe>
+  <tpe x="2" y="1450" tpage="Default_0" entry="5">spr_Enemy_2.tpe</tpe>
+  <tpe x="834" y="1034" tpage="Default_0" entry="7">spr_Spawn_1.tpe</tpe>
+  <tpe x="2" y="1682" tpage="Default_0" entry="6">spr_Spawn_0.tpe</tpe>
+  <tpe x="2" y="1682" tpage="Default_0" entry="8">spr_Spawn_2.tpe</tpe>
+  <tpe x="886" y="1034" tpage="Default_0" entry="9">spr_Laser_0.tpe</tpe>
+  <tpe x="498" y="1426" tpage="Default_0" entry="10">spr_Laser_1.tpe</tpe>
+  <tpe x="886" y="1034" tpage="Default_0" entry="11">spr_Laser_2.tpe</tpe>
 </TextureGroup>

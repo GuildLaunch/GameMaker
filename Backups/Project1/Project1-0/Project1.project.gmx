@@ -7,11 +7,9 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
-    <sprite>sprites\spr_Wall</sprite>
-    <sprite>sprites\spr_gameBoundary</sprite>
-    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_Enemy</sprite>
     <sprite>sprites\spr_Spawn</sprite>
-    <sprite>sprites\spr_laser</sprite>
+    <sprite>sprites\spr_Laser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -19,18 +17,18 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_ScoreBoard</object>
+    <object>objects\obj_TwitterPump</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_Laser</object>
-    <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_Enemy</object>
-    <object>objects\obj_TwitterPump</object>
     <object>objects\obj_Spawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41874.954035706</constant>
+    <constant name="GM_build_date">41874.9761709838</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
