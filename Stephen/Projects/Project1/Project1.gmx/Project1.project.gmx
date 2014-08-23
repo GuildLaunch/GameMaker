@@ -17,7 +17,7 @@
     <background>background\bg_Space2</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_Player</object>
     <object>objects\obj_Wall</object>
@@ -30,7 +30,7 @@
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41874.8821596296</constant>
+    <constant name="GM_build_date">41874.8949822685</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
