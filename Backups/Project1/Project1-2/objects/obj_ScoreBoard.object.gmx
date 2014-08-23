@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_color(16,16,"Boost: " + currentPlayerBoost,c_white,c_white,c_white,c_white,1);
+            <string>text_y = 680;
+
+draw_text_transformed_color(16,text_y,"TwitBoost: " + currentPlayerBoost,2,2,0,c_white,c_white,c_white,c_white,1);
+
+draw_text_transformed_color(1100,text_y,"TwitBoost: 0",2,2,0,c_white,c_white,c_white,c_white,1);
+
+draw_text_transformed_color(400,text_y,"Score: " + string(score),2,2,0,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>

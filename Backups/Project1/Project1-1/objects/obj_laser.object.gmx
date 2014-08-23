@@ -19,7 +19,7 @@
         <exetype>1</exetype>
         <functionname>action_set_hspeed</functionname>
         <codestring></codestring>
-        <whoName>obj_laser</whoName>
+        <whoName>obj_Laser</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

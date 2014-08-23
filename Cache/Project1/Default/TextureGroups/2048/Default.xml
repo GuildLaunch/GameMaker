@@ -1,28 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureGroup>
   <texture scale="1">Default_0.png</texture>
-  <tpe x="0" y="4" tpage="Default_0" entry="23">bg_Space2.tpe</tpe>
-  <tpe x="4" y="780" tpage="Default_0" entry="22">bg_Space.tpe</tpe>
+  <tpe x="0" y="4" tpage="Default_0" entry="13">bg_Space2.tpe</tpe>
+  <tpe x="4" y="780" tpage="Default_0" entry="12">bg_Space.tpe</tpe>
   <tpe x="2" y="1194" tpage="Default_0" entry="1">spr_Player_1.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="0">spr_Player_0.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="2">spr_Player_2.tpe</tpe>
-  <tpe x="498" y="1194" tpage="Default_0" entry="20">spr_enemy_1.tpe</tpe>
-  <tpe x="2" y="1450" tpage="Default_0" entry="19">spr_enemy_0.tpe</tpe>
-  <tpe x="2" y="1450" tpage="Default_0" entry="21">spr_enemy_2.tpe</tpe>
+  <tpe x="498" y="1194" tpage="Default_0" entry="6">spr_enemy_1.tpe</tpe>
+  <tpe x="2" y="1450" tpage="Default_0" entry="5">spr_enemy_0.tpe</tpe>
+  <tpe x="2" y="1450" tpage="Default_0" entry="7">spr_enemy_2.tpe</tpe>
+  <tpe x="834" y="1034" tpage="Default_0" entry="9">spr_Spawn_1.tpe</tpe>
+  <tpe x="2" y="1682" tpage="Default_0" entry="8">spr_Spawn_0.tpe</tpe>
+  <tpe x="2" y="1682" tpage="Default_0" entry="10">spr_Spawn_2.tpe</tpe>
   <tpe x="990" y="778" tpage="Default_0" entry="3">spr_Wall_0.tpe</tpe>
-  <tpe x="834" y="1034" tpage="Default_0" entry="18">spr_gameBoundary_0.tpe</tpe>
-  <tpe x="498" y="1426" tpage="Default_0" entry="4">spr_laser_0.tpe</tpe>
-  <tpe x="2" y="1682" tpage="Default_0" entry="5">spr_laser_1.tpe</tpe>
-  <tpe x="870" y="1034" tpage="Default_0" entry="6">spr_laser_2.tpe</tpe>
-  <tpe x="834" y="1070" tpage="Default_0" entry="7">spr_laser_3.tpe</tpe>
-  <tpe x="550" y="1034" tpage="Default_0" entry="8">spr_laser_4.tpe</tpe>
-  <tpe x="554" y="1426" tpage="Default_0" entry="9">spr_laser_5.tpe</tpe>
-  <tpe x="58" y="1682" tpage="Default_0" entry="10">spr_laser_6.tpe</tpe>
-  <tpe x="2" y="1706" tpage="Default_0" entry="11">spr_laser_7.tpe</tpe>
-  <tpe x="926" y="1034" tpage="Default_0" entry="12">spr_laser_8.tpe</tpe>
-  <tpe x="834" y="1094" tpage="Default_0" entry="13">spr_laser_9.tpe</tpe>
-  <tpe x="890" y="1058" tpage="Default_0" entry="14">spr_laser_10.tpe</tpe>
-  <tpe x="606" y="1034" tpage="Default_0" entry="15">spr_laser_11.tpe</tpe>
-  <tpe x="550" y="1058" tpage="Default_0" entry="16">spr_laser_12.tpe</tpe>
-  <tpe x="610" y="1426" tpage="Default_0" entry="17">spr_laser_13.tpe</tpe>
+  <tpe x="886" y="1034" tpage="Default_0" entry="4">spr_gameBoundary_0.tpe</tpe>
+  <tpe x="498" y="1426" tpage="Default_0" entry="11">spr_laser_0.tpe</tpe>
 </TextureGroup>

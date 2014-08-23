@@ -53,7 +53,8 @@
   <instances>
     <instance objName="obj_Player" x="32" y="64" name="inst_6AA72455" locked="0" code="" scaleX="0.128000006079674" scaleY="0.118518516421318" colour="4294967295" rotation="0"/>
     <instance objName="obj_TwitterPump" x="-96" y="256" name="inst_03B598B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy" x="1280" y="352" name="inst_50CEF3B0" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Enemy" x="1280" y="352" name="inst_50CEF3B0" locked="0" code="" scaleX="0.100000001490116" scaleY="0.100000001490116" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ScoreBoard" x="-96" y="320" name="inst_7F9EF2A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

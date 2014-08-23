@@ -100,7 +100,7 @@ noShots+=1;
 else
 {
 noShots = 0;
-instance_create(x+10,y+16,spr_laser);
+instance_create(x+10,y+16,obj_Laser);
 }
 </string>
           </argument>

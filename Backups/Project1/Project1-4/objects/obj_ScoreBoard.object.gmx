@@ -7,7 +7,37 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>text_y = 680;
+
+draw_text_transformed_color(16,text_y,"TwitBoost: " + currentPlayerBoost,2,2,0,c_white,c_white,c_white,c_white,1);
+
+draw_text_transformed_color(1200,text_y,"TwitBoost: 0",2,2,0,c_white,c_white,c_white,c_white,1);
+
+draw_text_transformed_color(400,text_y,"Score: " + string(score),2,2,0,c_white,c_white,c_white,c_white,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

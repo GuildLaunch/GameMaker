@@ -8,9 +8,10 @@
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Wall</sprite>
-    <sprite>sprites\spr_laser</sprite>
     <sprite>sprites\spr_gameBoundary</sprite>
     <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_Spawn</sprite>
+    <sprite>sprites\spr_laser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -19,18 +20,17 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_Player</object>
-    <object>objects\obj_Wall</object>
-    <object>objects\obj_laser</object>
-    <object>objects\obj_gameBoundary</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_TwitterPump</object>
+    <object>objects\obj_Laser</object>
     <object>objects\obj_ScoreBoard</object>
+    <object>objects\obj_Enemy</object>
+    <object>objects\obj_TwitterPump</object>
+    <object>objects\obj_Spawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41874.9281167477</constant>
+    <constant name="GM_build_date">41874.9473986806</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
