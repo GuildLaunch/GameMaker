@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timer=10;
-      draw_text_color(view_xview+10,view_yview-10,"20",c_white,c_white,c_white,c_white,1);
+            <string>timer=300;
+currentPlayerBoost="0";
 </string>
           </argument>
         </arguments>
@@ -51,7 +51,7 @@
             <kind>1</kind>
             <string>if (timer &lt;= 0) {
   //do something...in this case, it'd probably be...
-  http_get("http://www.YoYoGames.com/logon?username="+name);
+  get = http_get("http://unfavinator.com/game/shmup1/endpoint.php");
   timer = 10;
 } else {
   timer -= 1;
@@ -83,13 +83,36 @@
    if ds_map_find_value(async_load, "status") == 0
       {
       r_str = ds_map_find_value(async_load, "result");
-      draw_text_color(view_xview+10,view_yview-10,"20",c_white,c_white,c_white,c_white,1);
+      currentPlayerBoost = r_str;
       }
    else
       {
       r_str = "null";
       }
    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text_color(16,16,"Boost: " + currentPlayerBoost,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>
