@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>timer=60;
+globalvar currentPlayerBoost;
 currentPlayerBoost="0";
 </string>
           </argument>
@@ -52,7 +53,7 @@ currentPlayerBoost="0";
             <string>if (timer &lt;= 0) {
   //do something...in this case, it'd probably be...
   get = http_get("http://unfavinator.com/game/shmup1/endpoint.php");
-  timer = 10;
+  timer = 60;
 } else {
   timer -= 1;
 }
@@ -84,6 +85,7 @@ currentPlayerBoost="0";
       {
       r_str = ds_map_find_value(async_load, "result");
       currentPlayerBoost = r_str;
+      rateOfFire = rateOfFireInit - real(currentPlayerBoost);
       }
    else
       {

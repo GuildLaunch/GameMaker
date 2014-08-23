@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>globalvar rateOfFire;
+globalvar rateOfFireInit;
 globalvar noShots;
+rateOfFireInit = 10;
 rateOfFire = 10;
 noShots = 0;
 spd=10;

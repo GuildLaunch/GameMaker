@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>timer=60;
+globalvar currentPlayerBoost;
 currentPlayerBoost="0";
 </string>
           </argument>
@@ -84,6 +85,7 @@ currentPlayerBoost="0";
       {
       r_str = ds_map_find_value(async_load, "result");
       currentPlayerBoost = r_str;
+      rateOfFire = rateOfFireInit - 0real(currentPlayerBoost);
       }
    else
       {
