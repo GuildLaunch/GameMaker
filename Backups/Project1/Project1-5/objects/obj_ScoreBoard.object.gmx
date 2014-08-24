@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>globalvar currentPlayerBoost;
+currentPlayerBoost=0;
+globalvar currentEnemyBoost;
+currentEnemyBoost=0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -50,11 +54,15 @@
             <string>text_y = 680;
 /// woot
 
+draw_set_font(fontSmall);
+draw_text_transformed_color(16,text_y-30,"@GLStephen",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),2,2,0,c_white,c_white,c_white,c_white,1);
 
-draw_text_transformed_color(1000,text_y,"TwitBoost: 0",2,2,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1000,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1000,text_y,"TwitBoost: " + string(currentEnemyBoost),2,2,0,c_white,c_white,c_white,c_white,1);
 
-draw_text_transformed_color(500,text_y,"Score: " + string(score),2,2,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(500,text_y,"Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>

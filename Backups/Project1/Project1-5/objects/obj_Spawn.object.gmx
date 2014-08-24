@@ -28,7 +28,7 @@
             <string>globalvar rateOfSpawn;
 globalvar rateOfSpawnInit;
 globalvar noShips;
-rateOfSpawnInit = 10;
+rateOfSpawnInit = 15;
 rateOfSpawn = rateOfSpawnInit;
 noShips = 0;
 </string>

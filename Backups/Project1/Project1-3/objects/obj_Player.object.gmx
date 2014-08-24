@@ -69,8 +69,8 @@ draw_text(50, 0, gamepad_axis_value(0,gp_axislh));
 if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt; -0.2 || vertical_value &lt; -0.2)
 {
     if place_free(x+scaled_horizontal_value,y) &amp;&amp; place_free(x,y+scaled_vertical_value){
-            x+=scaled_horizontal_value;
-            y+=scaled_vertical_value;
+            new_x_mod=scaled_horizontal_value;
+            new_y_mod=scaled_vertical_value;
     }else if place_free(x+1,y) || place_free(x,y+1){
          while(!place_free(x+scaled_horizontal_value,y) &amp;&amp; scaled_horizontal_value != 0){
             if (scaled_horizontal_value &gt; 0)
@@ -88,9 +88,18 @@ if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt
                 scaled_vertical_value+=1;
             }
          }
-         x+=floor(scaled_horizontal_value);
-         y+=floor(scaled_vertical_value);
+         if (floor(scaled_horizontal_value) &lt; 1280 &amp;&amp; floor(scaled_vertical_value))
+         {
+            new_x_mod=floor(scaled_horizontal_value);
+            new_y_mod=floor(scaled_vertical_value);
+         }
     }
+    
+    if ((x+floor(new_x_mod)) &lt; 1250 &amp;&amp; (y+floor(new_y_mod) &lt; 700) &amp;&amp; (x+floor(new_x_mod) &gt; -5) &amp;&amp; (y+floor(new_y_mod) &gt; -5))
+    {
+       x+=new_x_mod;
+       y+=new_y_mod;
+    }    
 }
 
 if (noShots &lt; rateOfFire)
@@ -102,6 +111,31 @@ else
 noShots = 0;
 instance_create(x+10,y+16,obj_Laser);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_Enemy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(x,y,obj_Splosion);
+instance_destroy();
+
 </string>
           </argument>
         </arguments>
