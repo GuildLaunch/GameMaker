@@ -115,7 +115,7 @@ lifetime+=1;
             <kind>1</kind>
             <string>score+=10;
 with(other){
-    instance_create(x+175,y+125,obj_Splosion);
+    instance_create(x,y,obj_Splosion);
     instance_destroy();
 }
 instance_destroy();

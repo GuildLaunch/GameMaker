@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TPE>
-  <w>37</w>
+  <w>23</w>
   <h>6</h>
   <name>Default</name>
   <hasAlpha>True</hasAlpha>
-  <hash>663461170</hash>
-  <xoffset>0</xoffset>
-  <yoffset>2</yoffset>
-  <cropWidth>37</cropWidth>
+  <hash>1887240260</hash>
+  <xoffset>5</xoffset>
+  <yoffset>1</yoffset>
+  <cropWidth>23</cropWidth>
   <cropHeight>6</cropHeight>
-  <ow>37</ow>
-  <oh>10</oh>
+  <ow>33</ow>
+  <oh>9</oh>
   <image>spr_Laser_0.tpe.png</image>
 </TPE>

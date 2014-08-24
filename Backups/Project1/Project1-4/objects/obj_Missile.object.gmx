@@ -59,19 +59,20 @@ motion_set(direction,25);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///if (lifetime &lt; 1)
+            <string>image_angle = direction;
+///if (lifetime &lt; 1)
 ///{
     ///instance_destroy();
 ///}else{
 if (lifetime &gt; 2 &amp;&amp; lifetime &lt;= 20) {
-    image_angle = 90;
+    ///image_angle = 90;
     if(instance_exists(enemy)){
         motion_add(point_direction(x,y,enemy.x, enemy.y),1.5);
     }else{
         enemy=instance_nearest(x,y,obj_Enemy);
     }
 }else if (lifetime &gt; 20) {
-    image_angle = 270;
+    ///image_angle = 270;
     if(instance_exists(enemy)){
         motion_add(point_direction(x,y,enemy.x, enemy.y),2);
     }else{
@@ -81,7 +82,7 @@ if (lifetime &gt; 2 &amp;&amp; lifetime &lt;= 20) {
 if speed&gt;40 speed=40;
 if (lifetime &gt; max_lifetime)
 {
-        image_angle = 280;    
+        ///image_angle = 280;    
         motion_set(direction,50);
 }
 if (x &lt; 0 || x &gt; 1280)
@@ -114,7 +115,7 @@ lifetime+=1;
             <kind>1</kind>
             <string>score+=10;
 with(other){
-    instance_create(x+175,y+125,obj_Splosion);
+    instance_create(x,y,obj_Splosion);
     instance_destroy();
 }
 instance_destroy();

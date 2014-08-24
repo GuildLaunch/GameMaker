@@ -101,7 +101,7 @@ if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt
          }
     }
     
-    if ((x+floor(new_x_mod)) &lt; 1250 &amp;&amp; (y+floor(new_y_mod) &lt; 700) &amp;&amp; (x+floor(new_x_mod) &gt; -5) &amp;&amp; (y+floor(new_y_mod) &gt; -5))
+    if ((x+floor(new_x_mod)) &lt; 1270 &amp;&amp; (y+floor(new_y_mod) &lt; 600) &amp;&amp; (x+floor(new_x_mod) &gt; -2) &amp;&amp; (y+floor(new_y_mod) &gt; 5))
     {
        x+=new_x_mod;
        y+=new_y_mod;
