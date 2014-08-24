@@ -5,7 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\snd_Music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
@@ -14,6 +14,8 @@
     <sprite>sprites\spr_Laser</sprite>
     <sprite>sprites\spr_Splosion</sprite>
     <sprite>sprites\spr_Missile</sprite>
+    <sprite>sprites\spr_PowerUpMissile</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -39,6 +41,7 @@
     <object>objects\obj_Splosion</object>
     <object>objects\obj_BackgroundSound</object>
     <object>objects\obj_Missile</object>
+    <object>objects\obj_PowerUpMissile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
@@ -46,7 +49,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.8338567477</constant>
+    <constant name="GM_build_date">41875.9881953935</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
