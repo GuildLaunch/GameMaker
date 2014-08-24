@@ -17,6 +17,10 @@
     <background>background\bg_Space2</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fontLarge</font>
+    <font>fonts\fontSmall</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
@@ -30,7 +34,7 @@
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.0048871412</constant>
+    <constant name="GM_build_date">41875.0270502662</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

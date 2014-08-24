@@ -105,7 +105,7 @@ if (timerEnemy &lt;= 0) {
       {
       r_str = ds_map_find_value(async_load, "result");
       currentEnemyBoost = real(r_str);
-      rateOfSpawn = rateOfSpawnInit - real(currentPlayerBoost);
+      rateOfSpawn = rateOfSpawnInit - real(currentEnemyBoost);
       }
    else
       {
