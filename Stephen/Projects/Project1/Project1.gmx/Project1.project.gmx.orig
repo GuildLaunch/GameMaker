@@ -30,7 +30,11 @@
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
+<<<<<<< HEAD
+    <constant name="GM_build_date">41875.0061275463</constant>
+=======
     <constant name="GM_build_date">41875.0048871412</constant>
+>>>>>>> 36d14281d317bcb2c99748ecebc5f9042cb1bff9
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
