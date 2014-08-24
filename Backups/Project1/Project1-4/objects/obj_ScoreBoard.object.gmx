@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>globalvar currentPlayerBoost;
 currentPlayerBoost=0;
+globalvar currentEnemyBoost;
+currentEnemyBoost=0;
 </string>
           </argument>
         </arguments>

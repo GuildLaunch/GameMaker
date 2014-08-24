@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>timer=60;
+timerEnemy=60;
 </string>
           </argument>
         </arguments>
@@ -55,6 +56,13 @@
 } else {
   timer -= 1;
 }
+if (timerEnemy &lt;= 0) {
+  //do something...in this case, it'd probably be...
+  getEnemy = http_get("http://unfavinator.com/game/shmup1/endpoint.php?enemy=1");
+  timerEnemy = 60;
+} else {
+  timerEnemy -= 1;
+}
 </string>
           </argument>
         </arguments>
@@ -82,8 +90,22 @@
    if ds_map_find_value(async_load, "status") == 0
       {
       r_str = ds_map_find_value(async_load, "result");
-      currentPlayerBoost = r_str;
+      currentPlayerBoost = real(r_str);
       rateOfFire = rateOfFireInit - real(currentPlayerBoost);
+      }
+   else
+      {
+      r_str = "null";
+      }
+   }
+   
+   if ds_map_find_value(async_load, "id") == getEnemy
+   {
+   if ds_map_find_value(async_load, "status") == 0
+      {
+      r_str = ds_map_find_value(async_load, "result");
+      currentEnemyBoost = real(r_str);
+      rateOfSpawn = rateOfFireInit - real(currentPlayerBoost);
       }
    else
       {

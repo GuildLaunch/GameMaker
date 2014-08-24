@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>globalvar currentPlayerBoost;
 currentPlayerBoost=0;
+globalvar currentEnemyBoost;
+currentEnemyBoost=0;
 </string>
           </argument>
         </arguments>
@@ -54,7 +56,7 @@ currentPlayerBoost=0;
 
 draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),2,2,0,c_white,c_white,c_white,c_white,1);
 
-draw_text_transformed_color(1000,text_y,"TwitBoost: 0",2,2,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1000,text_y,"TwitBoost: " + string(currentEnemyBoost),2,2,0,c_white,c_white,c_white,c_white,1);
 
 draw_text_transformed_color(500,text_y,"Score: " + string(score),2,2,0,c_white,c_white,c_white,c_white,1);
 </string>
