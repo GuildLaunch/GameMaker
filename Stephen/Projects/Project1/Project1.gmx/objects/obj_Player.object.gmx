@@ -32,7 +32,7 @@ globalvar missilesActive;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
 noShots = 0;
-spd=10;
+spd=12;
 missilesActive=1;
 missileCount=0;
 maxMissileCount=10;
