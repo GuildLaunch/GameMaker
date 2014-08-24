@@ -115,7 +115,7 @@ noShots+=1;
 else
 {
 noShots = 0;
-instance_create(x+10,y+6,obj_Laser);
+instance_create(x+5,y,obj_Laser);
 }
 
 if (missileCount &gt; maxMissileCount){

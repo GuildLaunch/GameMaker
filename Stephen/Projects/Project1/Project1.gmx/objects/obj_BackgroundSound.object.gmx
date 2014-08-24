@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound0</sound>
+            <sound>snd_Music</sound>
           </argument>
           <argument>
             <kind>3</kind>
