@@ -25,6 +25,7 @@
   <fonts name="fonts">
     <font>fonts\fontLarge</font>
     <font>fonts\fontSmall</font>
+    <font>fonts\fontXS</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_GameStart</object>
@@ -45,7 +46,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.1138702546</constant>
+    <constant name="GM_build_date">41875.8058981482</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

@@ -28,10 +28,16 @@
             <string>globalvar rateOfFire;
 globalvar rateOfFireInit;
 globalvar noShots;
+globalvar missilesActive;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
 noShots = 0;
 spd=10;
+missilesActive=1;
+missileCount=0;
+maxMissileCount=10;
+/// reset score
+score=0;
 </string>
           </argument>
         </arguments>
@@ -112,9 +118,12 @@ noShots = 0;
 instance_create(x+10,y+6,obj_Laser);
 }
 
-if(random_range(1,200) &gt; 195)
-{
-    instance_create(x+10,y+6,obj_Missile);
+if (missileCount &gt; maxMissileCount){
+    rand_spawn_point = choose(40,0,-40);
+    instance_create(x+10,y+rand_spawn_point,obj_Missile);
+    missileCount = 0;
+}else{
+    missileCount+=1;
 }
 </string>
           </argument>

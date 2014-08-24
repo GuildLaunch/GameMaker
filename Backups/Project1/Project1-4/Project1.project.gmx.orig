@@ -13,10 +13,13 @@
     <sprite>sprites\spr_Spawn</sprite>
     <sprite>sprites\spr_Laser</sprite>
     <sprite>sprites\spr_Splosion</sprite>
+    <sprite>sprites\spr_Missile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
     <background>background\bg_Space2</background>
+    <background>background\bg_StartMenu</background>
+    <background>background\bg_GameOver</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -24,6 +27,8 @@
     <font>fonts\fontSmall</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_GameStart</object>
+    <object>objects\obj_GameOver</object>
     <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
     <object>objects\obj_Player</object>
@@ -32,16 +37,19 @@
     <object>objects\obj_Spawn</object>
     <object>objects\obj_Splosion</object>
     <object>objects\obj_BackgroundSound</object>
+    <object>objects\obj_Missile</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_Start</room>
+    <room>rooms\rm_Game</room>
+    <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
 <<<<<<< HEAD
-    <constant name="GM_build_date">41875.0431026389</constant>
+    <constant name="GM_build_date">41875.1193802199</constant>
 =======
-    <constant name="GM_build_date">41875.0434607523</constant>
->>>>>>> 900be4c8577a5c267310a63bb8193489fbf7ef2c
+    <constant name="GM_build_date">41875.1138702546</constant>
+>>>>>>> 2d8254c1f0e5c30902ff16a180131defbdc1d85c
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

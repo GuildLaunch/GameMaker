@@ -18,13 +18,18 @@
   <backgrounds name="background">
     <background>background\bg_Space</background>
     <background>background\bg_Space2</background>
+    <background>background\bg_StartMenu</background>
+    <background>background\bg_GameOver</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fontLarge</font>
     <font>fonts\fontSmall</font>
+    <font>fonts\fontXS</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_GameStart</object>
+    <object>objects\obj_GameOver</object>
     <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
     <object>objects\obj_Player</object>
@@ -36,10 +41,12 @@
     <object>objects\obj_Missile</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_Start</room>
+    <room>rooms\rm_Game</room>
+    <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.1189779514</constant>
+    <constant name="GM_build_date">41875.8050247569</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
