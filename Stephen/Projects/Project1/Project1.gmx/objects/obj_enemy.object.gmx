@@ -48,7 +48,10 @@
           <argument>
             <kind>1</kind>
             <string>if (x &lt; -150)
-{instance_destroy();}
+{
+instance_destroy();
+score-=10;
+}
 </string>
           </argument>
         </arguments>
