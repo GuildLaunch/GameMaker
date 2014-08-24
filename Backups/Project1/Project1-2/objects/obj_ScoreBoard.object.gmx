@@ -97,7 +97,7 @@ draw_text_transformed_color(1100,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_
 draw_text_transformed_color(1100,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_font(fontLarge);
-draw_text_transformed_color(500,text_y,"Level: " + string(level) + " Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(400,text_y-30,"Level: " + string(level) + " Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>

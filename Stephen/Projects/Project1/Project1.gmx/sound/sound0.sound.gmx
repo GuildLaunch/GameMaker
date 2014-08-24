@@ -15,14 +15,14 @@
     <sampleRate>44100</sampleRate>
   </sampleRates>
   <types>
-    <type>0</type>
+    <type>1</type>
   </types>
   <bitDepths>
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
   <data>sound0.mp3</data>
-  <compressed>1</compressed>
-  <streamed>1</streamed>
+  <compressed>0</compressed>
+  <streamed>0</streamed>
   <uncompressOnLoad>0</uncompressOnLoad>
 </sound>

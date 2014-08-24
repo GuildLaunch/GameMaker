@@ -5,7 +5,7 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0</sound>
+    <sound>sound\snd_Music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
@@ -47,10 +47,10 @@
   </rooms>
   <constants number="2">
 <<<<<<< HEAD
-    <constant name="GM_build_date">41875.8058981482</constant>
+    <constant name="GM_build_date">41875.8925446412</constant>
 =======
-    <constant name="GM_build_date">41875.7988068056</constant>
->>>>>>> 0ad9fd258b9080fcc9d904f95a8816640fb2d395
+    <constant name="GM_build_date">41875.8613500926</constant>
+>>>>>>> 85dc71a9fc7428d57336a2c6db207351aea83253
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

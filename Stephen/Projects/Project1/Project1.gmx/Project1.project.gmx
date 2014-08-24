@@ -17,6 +17,8 @@
     <sprite>sprites\spr_Laser</sprite>
     <sprite>sprites\spr_Splosion</sprite>
     <sprite>sprites\spr_Missile</sprite>
+    <sprite>sprites\spr_PowerUpMissile</sprite>
+    <sprite>sprites\sprite7</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -42,6 +44,7 @@
     <object>objects\obj_Splosion</object>
     <object>objects\obj_BackgroundSound</object>
     <object>objects\obj_Missile</object>
+    <object>objects\obj_PowerUpMissile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>

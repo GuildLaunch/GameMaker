@@ -60,7 +60,7 @@ noShips+=1;
 else
 {
 noShips = 0;
-y_spawn = random_range(30,room_height-245);
+y_spawn = random_range(30,room_height-100);
 ///y_spawn = 40; ///room_height-100;
 x_spawn = 1290;
 spawn_type = random_range(0,level*3); 
