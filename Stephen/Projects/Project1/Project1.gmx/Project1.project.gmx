@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Enemy</sprite>
@@ -29,6 +31,7 @@
     <object>objects\obj_Enemy</object>
     <object>objects\obj_Spawn</object>
     <object>objects\obj_Splosion</object>
+    <object>objects\obj_BackgroundSound</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
