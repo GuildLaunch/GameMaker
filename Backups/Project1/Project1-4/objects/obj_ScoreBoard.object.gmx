@@ -56,10 +56,10 @@ currentEnemyBoost=0;
 
 draw_set_font(fontSmall);
 draw_text_transformed_color(16,text_y-30,"@GLStephen",1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),2,2,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_text_transformed_color(1000,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(1000,text_y,"TwitBoost: " + string(currentEnemyBoost),2,2,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1000,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_font(fontLarge);
 draw_text_transformed_color(500,text_y,"Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
