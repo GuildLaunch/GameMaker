@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Enemy</sprite>
@@ -17,6 +19,10 @@
     <background>background\bg_Space2</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\fontLarge</font>
+    <font>fonts\fontSmall</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
@@ -25,16 +31,17 @@
     <object>objects\obj_Enemy</object>
     <object>objects\obj_Spawn</object>
     <object>objects\obj_Splosion</object>
+    <object>objects\obj_BackgroundSound</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
 <<<<<<< HEAD
-    <constant name="GM_build_date">41875.0061275463</constant>
+    <constant name="GM_build_date">41875.0431026389</constant>
 =======
-    <constant name="GM_build_date">41875.0048871412</constant>
->>>>>>> 36d14281d317bcb2c99748ecebc5f9042cb1bff9
+    <constant name="GM_build_date">41875.0434607523</constant>
+>>>>>>> 900be4c8577a5c267310a63bb8193489fbf7ef2c
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

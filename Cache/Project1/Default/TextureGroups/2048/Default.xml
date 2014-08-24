@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureGroup>
   <texture scale="1">Default_0.png</texture>
-  <tpe x="0" y="4" tpage="Default_0" entry="17">bg_Space2.tpe</tpe>
-  <tpe x="4" y="780" tpage="Default_0" entry="16">bg_Space.tpe</tpe>
-  <tpe x="2" y="1194" tpage="Default_0" entry="18">fontLarge.tpe</tpe>
+  <tpe x="0" y="4" tpage="Default_0" entry="31">bg_Space2.tpe</tpe>
+  <tpe x="4" y="780" tpage="Default_0" entry="30">bg_Space.tpe</tpe>
+  <tpe x="2" y="1194" tpage="Default_0" entry="32">fontLarge.tpe</tpe>
   <tpe x="518" y="1194" tpage="Default_0" entry="1">spr_Player_1.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="0">spr_Player_0.tpe</tpe>
   <tpe x="550" y="778" tpage="Default_0" entry="2">spr_Player_2.tpe</tpe>
-  <tpe x="2" y="1454" tpage="Default_0" entry="19">fontSmall.tpe</tpe>
+  <tpe x="2" y="1454" tpage="Default_0" entry="33">fontSmall.tpe</tpe>
   <tpe x="550" y="1034" tpage="Default_0" entry="4">spr_Enemy_1.tpe</tpe>
   <tpe x="2" y="1714" tpage="Default_0" entry="3">spr_Enemy_0.tpe</tpe>
   <tpe x="2" y="1714" tpage="Default_0" entry="5">spr_Enemy_2.tpe</tpe>
@@ -16,9 +16,23 @@
   <tpe x="2" y="1834" tpage="Default_0" entry="13">spr_Splosion_1.tpe</tpe>
   <tpe x="806" y="1034" tpage="Default_0" entry="12">spr_Splosion_0.tpe</tpe>
   <tpe x="550" y="1154" tpage="Default_0" entry="7">spr_Spawn_1.tpe</tpe>
-  <tpe x="722" y="1118" tpage="Default_0" entry="6">spr_Spawn_0.tpe</tpe>
-  <tpe x="722" y="1118" tpage="Default_0" entry="8">spr_Spawn_2.tpe</tpe>
-  <tpe x="86" y="1834" tpage="Default_0" entry="9">spr_Laser_0.tpe</tpe>
-  <tpe x="150" y="1798" tpage="Default_0" entry="10">spr_Laser_1.tpe</tpe>
-  <tpe x="86" y="1834" tpage="Default_0" entry="11">spr_Laser_2.tpe</tpe>
+  <tpe x="722" y="1118" tpage="Default_0" entry="16">spr_Missile_0.tpe</tpe>
+  <tpe x="150" y="1798" tpage="Default_0" entry="17">spr_Missile_1.tpe</tpe>
+  <tpe x="86" y="1834" tpage="Default_0" entry="18">spr_Missile_2.tpe</tpe>
+  <tpe x="2" y="1918" tpage="Default_0" entry="19">spr_Missile_3.tpe</tpe>
+  <tpe x="878" y="1034" tpage="Default_0" entry="20">spr_Missile_4.tpe</tpe>
+  <tpe x="806" y="1102" tpage="Default_0" entry="21">spr_Missile_5.tpe</tpe>
+  <tpe x="602" y="1154" tpage="Default_0" entry="22">spr_Missile_6.tpe</tpe>
+  <tpe x="722" y="1150" tpage="Default_0" entry="23">spr_Missile_7.tpe</tpe>
+  <tpe x="206" y="1798" tpage="Default_0" entry="24">spr_Missile_8.tpe</tpe>
+  <tpe x="150" y="1830" tpage="Default_0" entry="25">spr_Missile_9.tpe</tpe>
+  <tpe x="86" y="1866" tpage="Default_0" entry="26">spr_Missile_10.tpe</tpe>
+  <tpe x="58" y="1918" tpage="Default_0" entry="27">spr_Missile_11.tpe</tpe>
+  <tpe x="2" y="1950" tpage="Default_0" entry="28">spr_Missile_12.tpe</tpe>
+  <tpe x="934" y="1034" tpage="Default_0" entry="29">spr_Missile_13.tpe</tpe>
+  <tpe x="878" y="1066" tpage="Default_0" entry="6">spr_Spawn_0.tpe</tpe>
+  <tpe x="878" y="1066" tpage="Default_0" entry="8">spr_Spawn_2.tpe</tpe>
+  <tpe x="778" y="1134" tpage="Default_0" entry="9">spr_Laser_0.tpe</tpe>
+  <tpe x="862" y="1102" tpage="Default_0" entry="10">spr_Laser_1.tpe</tpe>
+  <tpe x="778" y="1134" tpage="Default_0" entry="11">spr_Laser_2.tpe</tpe>
 </TextureGroup>

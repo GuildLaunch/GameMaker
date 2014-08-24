@@ -4,13 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound0</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
     <sprite>sprites\spr_Enemy</sprite>
     <sprite>sprites\spr_Spawn</sprite>
     <sprite>sprites\spr_Laser</sprite>
     <sprite>sprites\spr_Splosion</sprite>
+    <sprite>sprites\spr_Missile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -29,12 +32,14 @@
     <object>objects\obj_Enemy</object>
     <object>objects\obj_Spawn</object>
     <object>objects\obj_Splosion</object>
+    <object>objects\obj_BackgroundSound</object>
+    <object>objects\obj_Missile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.0222862847</constant>
+    <constant name="GM_build_date">41875.1172517361</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

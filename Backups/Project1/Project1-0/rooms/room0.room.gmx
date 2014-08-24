@@ -55,6 +55,7 @@
     <instance objName="obj_ScoreBoard" x="-96" y="320" name="inst_7F9EF2A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Spawn" x="1152" y="192" name="inst_897FA7B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TwitterPump" x="-96" y="352" name="inst_EEB72F02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BackgroundSound" x="-64" y="352" name="inst_F00B12D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

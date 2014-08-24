@@ -29,6 +29,41 @@
 currentPlayerBoost=0;
 globalvar currentEnemyBoost;
 currentEnemyBoost=0;
+globalvar level;
+level = 0;
+globalvar levelCounterInit;
+levelCounterInit = 100;
+globalvar levelCounter;
+levelCounter = levelCounterInit;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (levelCounter = 0)
+{
+    level+=1;
+    levelCounter = levelCounterInit;    
+}else{
+    levelCounter-=1;
+}
 </string>
           </argument>
         </arguments>
@@ -58,11 +93,11 @@ draw_set_font(fontSmall);
 draw_text_transformed_color(16,text_y-30,"@GLStephen",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
-draw_text_transformed_color(1000,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(1000,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1050,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1050,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_font(fontLarge);
-draw_text_transformed_color(500,text_y,"Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(500,text_y,"Level: " + string(level) + " Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>

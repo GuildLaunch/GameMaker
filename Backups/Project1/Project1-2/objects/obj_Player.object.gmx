@@ -109,7 +109,12 @@ noShots+=1;
 else
 {
 noShots = 0;
-instance_create(x+10,y+16,obj_Laser);
+instance_create(x+10,y+6,obj_Laser);
+}
+
+if(random_range(1,200) &gt; 195)
+{
+    instance_create(x+10,y+6,obj_Missile);
 }
 </string>
           </argument>
