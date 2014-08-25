@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TPE>
   <w>75</w>
-  <h>75</h>
+  <h>99</h>
   <name>Default</name>
   <hasAlpha>True</hasAlpha>
-  <hash>992348228</hash>
-  <xoffset>12</xoffset>
-  <yoffset>0</yoffset>
+  <hash>1226345855</hash>
+  <xoffset>0</xoffset>
+  <yoffset>26</yoffset>
   <cropWidth>75</cropWidth>
-  <cropHeight>75</cropHeight>
-  <ow>99</ow>
-  <oh>75</oh>
+  <cropHeight>99</cropHeight>
+  <ow>119</ow>
+  <oh>151</oh>
   <image>spr_Player_0.tpe.png</image>
 </TPE>

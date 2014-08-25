@@ -142,6 +142,11 @@ if (missilesActive == 1)
     }
 }
 lastMissile-=1;
+
+if (shieldActive &gt; 2)
+{
+    sprite_index = spr_PlayerShielded;
+}
 </string>
           </argument>
         </arguments>
