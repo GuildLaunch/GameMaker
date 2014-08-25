@@ -147,6 +147,14 @@ if (shieldActive &gt; 1)
 {
     sprite_index = spr_PlayerShielded;
 }
+
+
+///GameOver Lawl
+if(score&lt;-10)
+{
+room_goto(rm_GameOver);
+}
+
 </string>
           </argument>
         </arguments>
@@ -204,7 +212,6 @@ missileTimer+=missileTimerInit;
             <string>instance_create(x,y,obj_Splosion);
 instance_destroy();
 room_goto(rm_GameOver);
-
 </string>
           </argument>
         </arguments>
