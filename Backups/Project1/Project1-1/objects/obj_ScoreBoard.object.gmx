@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar currentPlayerBoost;
+            <string>randomize();
+globalvar currentPlayerBoost;
 currentPlayerBoost=0;
 globalvar currentEnemyBoost;
 currentEnemyBoost=0;

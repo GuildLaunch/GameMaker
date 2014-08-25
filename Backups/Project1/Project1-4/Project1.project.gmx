@@ -53,14 +53,16 @@
     <object>objects\obj_PowerUpMissile</object>
     <object>objects\obj_ShieldPowerUp</object>
     <object>objects\obj_LaserPowerUp</object>
+    <object>objects\obj_Credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
     <room>rooms\rm_Game</room>
     <room>rooms\rm_GameOver</room>
+    <room>rooms\rm_Credits</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.9566502199</constant>
+    <constant name="GM_build_date">41876.991608912</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

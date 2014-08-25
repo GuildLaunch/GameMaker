@@ -29,6 +29,11 @@
 {
 room_goto(rm_Game);
 }
+else if (gamepad_button_check(0,gp_face4))
+{
+room_goto(rm_Credits);
+}
+
 </string>
           </argument>
         </arguments>
@@ -51,15 +56,17 @@ room_goto(rm_Game);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text_y = 300;
+            <string>text_y = 340;
 /// woot
 draw_set_font(fontXXL);
 draw_set_halign(fa_center);
 draw_text_transformed_color(room_width/2,50,"Game Over",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontXL);
 draw_text_transformed_color(room_width/2,200,"Push A To Restart",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,280,"Push Y For Credits",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontLarge);
-draw_text_transformed_color(room_width/2,280,"Your Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2,315,"Your Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontSmall);
 var i;
 i = 1;
@@ -71,7 +78,7 @@ hs_name = highscore_name(i);
 draw_set_halign(fa_left);
 x_location = room_width/2 - 100;
 my_color = c_white;
-if (string(score) == hs_value)
+if (score == hs_value)
 {
     my_color = c_lime;
 }
