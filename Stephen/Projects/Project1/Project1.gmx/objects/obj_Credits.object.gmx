@@ -29,11 +29,6 @@
 {
 room_goto(rm_Game);
 }
-else if (gamepad_button_check(0,gp_face4))
-{
-room_goto(rm_Credits);
-}
-
 </string>
           </argument>
         </arguments>
@@ -56,31 +51,35 @@ room_goto(rm_Credits);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text_y = 340;
-/// woot
-draw_set_font(fontXXL);
-draw_set_halign(fa_center);
-draw_text_transformed_color(room_width/2,50,"Game Over",1,1,0,c_white,c_white,c_white,c_white,1);
+            <string>draw_set_halign(fa_center);
 draw_set_font(fontXL);
-draw_text_transformed_color(room_width/2,200,"Push A To Restart",1,1,0,c_white,c_white,c_white,c_white,1);
-draw_set_font(fontSmall);
-draw_text_transformed_color(room_width/2,280,"Push Y For Credits",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2,20,"Created By:",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontLarge);
-draw_text_transformed_color(room_width/2,315,"Your Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2,95,"Stephen Johnston",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontSmall);
-var i;
-i = 1;
-repeat(10)
-{
-draw_location = text_y+(i*30);
-hs_value = highscore_value(i);
-hs_name = highscore_name(i);
-draw_set_halign(fa_left);
-x_location = room_width/2 - 100;
-draw_text_transformed_color(x_location,draw_location,string(hs_name),1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(x_location+150,draw_location,string(hs_value),1,1,0,c_white,c_white,c_white,c_white,1);
-i += 1;
-}
+draw_text_transformed_color(room_width/2,135,"@GLStephen",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,165,"Brian Schaaf",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,205,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,230,"Brian Hosmillo",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,300,"Stephen &amp; Roth are part of the team at @GuildLaunch and @GameSkinny",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,330,"www.GuildLaunch.com",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,380,"www.GameSkinny.com",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,450,"Music By Decktonic",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,495,"www.ThisIsDecktonic.com",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,540,"Graphic assets by www.Kenney.nl",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,580,"Thanks for uploading to OpenGameArt.org!",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,650,"Press A To Play Again!",1,1,0,c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>
