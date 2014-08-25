@@ -29,13 +29,16 @@
 globalvar rateOfFireInit;
 globalvar noShots;
 globalvar missilesActive;
+globalvar lastMissile;
+lastMissile = 30;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
 noShots = 0;
 spd=12;
 missilesActive=0;
 missileCount=0;
-maxMissileCount=10;
+missilePowerupLevel=0;
+maxMissileCount=15;
 missileTimerInit = 900;
 missileTimer = 0;
 /// reset score
@@ -132,9 +135,11 @@ if (missilesActive == 1)
     missileTimer-=1;
     if (missileTimer &lt; 0)
     {
-        missilesActive = 0;   
+        missilesActive = 0;
+        missilePowerupLevel = 0;
     }
 }
+lastMissile-=1;
 </string>
           </argument>
         </arguments>
@@ -158,7 +163,15 @@ if (missilesActive == 1)
           <argument>
             <kind>1</kind>
             <string>missilesActive = 1;
+missilePowerupLevel+=1;
+if (missilePowerupLevel &gt; 0)
+{
+maxMissileCount = 10;
+}
+if (missilePowerupLevel &lt; 3)
+{
 missileTimer+=missileTimerInit;
+}
 </string>
           </argument>
         </arguments>
