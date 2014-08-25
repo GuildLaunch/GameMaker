@@ -56,7 +56,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.0505209606</constant>
+    <constant name="GM_build_date">41876.0511182639</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

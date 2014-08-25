@@ -168,16 +168,20 @@ if (shieldActive &gt; 0)
 }else{
     sprite_index = spr_Player;
 }
+
+
+///GameOver Lawl
 if(score&lt;-10)
 {
 room_goto(rm_GameOver);
 }
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-<event eventtype="4" ename="obj_ShieldPowerUp">
+    <event eventtype="4" ename="obj_ShieldPowerUp">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -194,7 +198,8 @@ room_goto(rm_GameOver);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shieldActive=1;</string>
+            <string>shieldActive=1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -248,6 +253,7 @@ missileTimer+=missileTimerInit;
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>shieldActive-=1;
 if (shieldActive &lt; 0){
     instance_create(x,y,obj_Splosion);
@@ -256,6 +262,12 @@ if (shieldActive &lt; 0){
 }else{
 
 }
+
+=======
+            <string>instance_create(x,y,obj_Splosion);
+instance_destroy();
+room_goto(rm_GameOver);
+>>>>>>> dd08010c3d37c19eda1c86f90a35e8e0a147a590
 </string>
           </argument>
         </arguments>

@@ -168,15 +168,16 @@ if (shieldActive &gt; 0)
 }else{
     sprite_index = spr_Player;
 }
+if(score&lt;-10)
+{
+room_goto(rm_GameOver);
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-if(score&lt;-10)
-{
-room_goto(rm_GameOver);
-}
+<event eventtype="4" ename="obj_ShieldPowerUp">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -193,8 +194,7 @@ room_goto(rm_GameOver);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shieldActive=1;
-</string>
+            <string>shieldActive=1;</string>
           </argument>
         </arguments>
       </action>

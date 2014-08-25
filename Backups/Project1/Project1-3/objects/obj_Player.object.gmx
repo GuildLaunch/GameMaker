@@ -47,7 +47,7 @@ missileTimer = 0;
 globalvar laserPowerUpTimeInit;
 globalvar laserPowerUp;
 laserPowerUpTimeInit = 30;
-laserPowerUp = 1;
+laserPowerUp = 0;
 laserPowerUpNoShot = 0;
 laserPowerUpRateOfFireInit = 10;
 laserPowerUpRateOfFire = laserPowerUpRateOfFireInit;
