@@ -88,8 +88,8 @@ draw_text_transformed_color(0+20,text_y-30,"\#TFPilot",1,1,0,c_white,c_white,c_w
 draw_text_transformed_color(0+20,text_y,"TwitBoost: " + string(currentPlayerBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_halign(fa_right);
-draw_text_transformed_color(1100,text_y-30,"\#TFEnemy",1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(1100,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width-20,text_y-30,"\#TFEnemy",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width-20,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_font(fontLarge);
 draw_text_transformed_color(400,text_y-30,"Level: " + string(level) + " Score: " + string(score),1,1,0,c_white,c_white,c_white,c_white,1);
