@@ -31,7 +31,7 @@ globalvar noShots;
 globalvar missilesActive;
 globalvar lastMissile;
 globalvar shieldActive;
-shieldActive = 0;
+shieldActive = 1;
 lastMissile = 150;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
@@ -142,6 +142,11 @@ if (missilesActive == 1)
     }
 }
 lastMissile-=1;
+
+if (shieldActive &gt; 2)
+{
+    sprite_index = spr_PlayerShielded;
+}
 </string>
           </argument>
         </arguments>
