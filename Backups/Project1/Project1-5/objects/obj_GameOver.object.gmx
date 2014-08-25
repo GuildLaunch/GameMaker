@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (gamepad_button_check(0,gp_face1))
+            <string>if (gamepad_button_check(0,gp_face1)|| keyboard_check(ord('A')))
 {
 room_goto(rm_Game);
 }

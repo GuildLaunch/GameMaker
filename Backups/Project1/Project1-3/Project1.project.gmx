@@ -42,6 +42,7 @@
     <object>objects\obj_GameOver</object>
     <object>objects\obj_ScoreBoard</object>
     <object>objects\obj_TwitterPump</object>
+    <object>objects\obj_VersionCheck</object>
     <object>objects\obj_Player</object>
     <object>objects\obj_Laser</object>
     <object>objects\obj_Enemy</object>
@@ -59,7 +60,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.8661834028</constant>
+    <constant name="GM_build_date">41876.9566502199</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

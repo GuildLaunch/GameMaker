@@ -75,10 +75,27 @@ score=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>horizontal_value = gamepad_axis_value(0,gp_axislh);
+            <string>
+horizontal_value = gamepad_axis_value(0,gp_axislh);
+if (keyboard_check(vk_left))
+{
+    horizontal_value = -1;
+}
+if (keyboard_check(vk_right))
+{
+    horizontal_value = 1;
+}
 scaled_horizontal_value = round(spd*horizontal_value);
 
 vertical_value = gamepad_axis_value(0,gp_axislv);
+if (keyboard_check(vk_up))
+{
+    vertical_value = -1;
+}
+if (keyboard_check(vk_down))
+{
+    vertical_value = 1;
+}
 scaled_vertical_value = round(spd*vertical_value);
 
 

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (gamepad_button_check(0,gp_face1))
+            <string>if (gamepad_button_check(0,gp_face1)|| keyboard_check(ord('A')))
 {
 room_goto(rm_Game);
 }
@@ -70,8 +70,13 @@ hs_value = highscore_value(i);
 hs_name = highscore_name(i);
 draw_set_halign(fa_left);
 x_location = room_width/2 - 100;
-draw_text_transformed_color(x_location,draw_location,string(hs_name),1,1,0,c_white,c_white,c_white,c_white,1);
-draw_text_transformed_color(x_location+150,draw_location,string(hs_value),1,1,0,c_white,c_white,c_white,c_white,1);
+my_color = c_white;
+if (score == hs_value)
+{
+    my_color = c_lime;
+}
+draw_text_transformed_color(x_location,draw_location,string(hs_name),1,1,0,my_color,my_color,my_color,my_color,1);
+draw_text_transformed_color(x_location+150,draw_location,string(hs_value),1,1,0,my_color,my_color,my_color,my_color,1);
 i += 1;
 }
 </string>
