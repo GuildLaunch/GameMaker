@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_Music</sound>
+    <sound>sound\snd_Missile</sound>
+    <sound>sound\snd_Laser</sound>
+    <sound>sound\snd_Explode</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
@@ -49,7 +52,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41875.9892958912</constant>
+    <constant name="GM_build_date">41876.0056123264</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

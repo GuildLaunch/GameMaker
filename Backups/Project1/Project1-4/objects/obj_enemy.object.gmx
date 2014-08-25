@@ -49,9 +49,10 @@
             <kind>1</kind>
             <string>if (x &gt; 10)
 {
-    if (random_range(1,1000) &gt; 985)
+    if (random_range(1,1000) &gt; 985 &amp;&amp; lastMissile &lt; 1)
     {
-        instance_create(x,y,obj_PowerUpMissile);   
+        instance_create(x,y,obj_PowerUpMissile);
+        lastMissile = 300;   
     }
 }
 </string>
