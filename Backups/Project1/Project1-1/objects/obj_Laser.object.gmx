@@ -97,10 +97,14 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>score+=10;
-with(other){
-    instance_create(x,y,obj_Splosion);
-    instance_destroy();
+            <string>with(other){
+    enemy_health-=1;
+    if (enemy_health &lt; 1)
+    {
+        score+=10;
+        instance_create(x,y,obj_Splosion);
+        instance_destroy();
+    }
 }
 instance_destroy();
 

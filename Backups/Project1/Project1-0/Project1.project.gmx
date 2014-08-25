@@ -21,6 +21,7 @@
     <sprite>sprites\spr_PlayerShielded</sprite>
     <sprite>sprites\spr_ShieldPowerUp</sprite>
     <sprite>sprites\spr_LaserPowerUp</sprite>
+    <sprite>sprites\spr_EnemySaucer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -56,7 +57,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.0506656597</constant>
+    <constant name="GM_build_date">41876.8542523727</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

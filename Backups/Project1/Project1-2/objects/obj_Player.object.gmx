@@ -143,7 +143,7 @@ if (laserPowerUp &gt; 0)
         instance_create(x+5,y-30,obj_Laser);
     }
 } 
-
+laserPowerUp-=1;
 if (missilesActive == 1)
 {
     if (missileCount &gt; maxMissileCount){
@@ -168,6 +168,43 @@ if (shieldActive &gt; 0)
 }else{
     sprite_index = spr_Player;
 }
+if(score&lt;-10)
+{
+highscore_add("\#TFPilot",score);
+score = 0;
+room_goto(rm_GameOver);
+}
+
+if (levelCounter = 0)
+{
+    level+=1;
+    levelCounter = levelCounterInit;    
+}else{
+    levelCounter-=1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_LaserPowerUp">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>laserPowerUp = 300;
 </string>
           </argument>
         </arguments>
@@ -190,8 +227,7 @@ if (shieldActive &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shieldActive=1;
-</string>
+            <string>shieldActive=1;</string>
           </argument>
         </arguments>
       </action>
@@ -249,11 +285,10 @@ missileTimer+=missileTimerInit;
 if (shieldActive &lt; 0){
     instance_create(x,y,obj_Splosion);
     instance_destroy();
+    highscore_add("\#TFPilot",score);
+    score = 0;
     room_goto(rm_GameOver);
-}else{
-
 }
-
 </string>
           </argument>
         </arguments>

@@ -57,14 +57,7 @@ levelCounter = levelCounterInit;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (levelCounter = 0)
-{
-    level+=1;
-    levelCounter = levelCounterInit;    
-}else{
-    levelCounter-=1;
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -90,10 +83,10 @@ levelCounter = levelCounterInit;
 /// woot
 
 draw_set_font(fontSmall);
-draw_text_transformed_color(16,text_y-30,"@GLStephen",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(16,text_y-30,"\#TFPilot",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_text_transformed_color(16,text_y,"TwitBoost: " + string(currentPlayerBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
-draw_text_transformed_color(1100,text_y-30,"@Rothalack",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(1100,text_y-30,"\#TFEnemy",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_text_transformed_color(1100,text_y,"TwitBoost: " + string(currentEnemyBoost),1,1,0,c_white,c_white,c_white,c_white,1);
 
 draw_set_font(fontLarge);

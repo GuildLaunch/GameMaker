@@ -49,10 +49,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemy=instance_nearest(1200,y,obj_Enemy);
-max_lifetime = 300;
+            <string>max_lifetime = 300;
 lifetime=0;
-temp_dir = random_range(-30,30);
+temp_dir = random_range(-50,50);
+seek_distance = x+600;
+if (seek_distance &gt; 1110)
+{
+    seek_distance = 1100;
+}
+enemy=instance_nearest(seek_distance,y+temp_dir,obj_Enemy);
 if (temp_dir &gt; 0)
 {
     direction = temp_dir;
@@ -138,10 +143,14 @@ lifetime+=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>score+=10;
-with(other){
-    instance_create(x,y,obj_Splosion);
-    instance_destroy();
+            <string>with(other){
+    enemy_health-=1;
+    if (enemy_health &lt; 1)
+    {
+        score+=10;
+        instance_create(x,y,obj_Splosion);
+        instance_destroy();
+    }
 }
 instance_destroy();
 
