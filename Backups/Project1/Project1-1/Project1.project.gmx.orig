@@ -6,6 +6,9 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_Music</sound>
+    <sound>sound\snd_Missile</sound>
+    <sound>sound\snd_Laser</sound>
+    <sound>sound\snd_Explode</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
@@ -14,6 +17,8 @@
     <sprite>sprites\spr_Laser</sprite>
     <sprite>sprites\spr_Splosion</sprite>
     <sprite>sprites\spr_Missile</sprite>
+    <sprite>sprites\spr_PowerUpMissile</sprite>
+    <sprite>sprites\spr_PlayerShielded</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -39,6 +44,7 @@
     <object>objects\obj_Splosion</object>
     <object>objects\obj_BackgroundSound</object>
     <object>objects\obj_Missile</object>
+    <object>objects\obj_PowerUpMissile</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
@@ -47,10 +53,10 @@
   </rooms>
   <constants number="2">
 <<<<<<< HEAD
-    <constant name="GM_build_date">41875.8925446412</constant>
+    <constant name="GM_build_date">41876.0056123264</constant>
 =======
-    <constant name="GM_build_date">41875.8613500926</constant>
->>>>>>> 85dc71a9fc7428d57336a2c6db207351aea83253
+    <constant name="GM_build_date">41876.0145169676</constant>
+>>>>>>> 63548cae6fd2bd6aacce7d846e0d47ec904a8fc8
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

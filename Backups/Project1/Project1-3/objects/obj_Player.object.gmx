@@ -30,6 +30,8 @@ globalvar rateOfFireInit;
 globalvar noShots;
 globalvar missilesActive;
 globalvar lastMissile;
+globalvar shieldActive;
+shieldActive = 1;
 lastMissile = 150;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
