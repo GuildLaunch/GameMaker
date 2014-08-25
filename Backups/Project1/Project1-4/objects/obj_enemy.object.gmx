@@ -49,10 +49,19 @@
             <kind>1</kind>
             <string>if (x &gt; 10)
 {
-    if (random_range(1,1000) &gt; 985 &amp;&amp; lastMissile &lt; 1)
+    // 985
+    if (random_range(1,1000) &gt; 95 &amp;&amp; lastMissile &lt; 1)
     {
-        instance_create(x,y,obj_PowerUpMissile);
-        lastMissile = 150;   
+        power_up_type = irandom(3);
+        if (power_up_type == 0)
+        {
+            instance_create(x,y,obj_PowerUpMissile);
+        }else if (power_up_type == 2){
+            instance_create(x,y,obj_ShieldPowerUp);
+        }else if (power_up_type == 3){
+            instance_create(x,y,obj_LaserPowerUp);    
+        }
+        lastMissile = 150;
     }
 }
 </string>

@@ -19,6 +19,8 @@
     <sprite>sprites\spr_Missile</sprite>
     <sprite>sprites\spr_PowerUpMissile</sprite>
     <sprite>sprites\spr_PlayerShielded</sprite>
+    <sprite>sprites\spr_ShieldPowerUp</sprite>
+    <sprite>sprites\spr_LaserPowerUp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -45,6 +47,8 @@
     <object>objects\obj_BackgroundSound</object>
     <object>objects\obj_Missile</object>
     <object>objects\obj_PowerUpMissile</object>
+    <object>objects\obj_ShieldPowerUp</object>
+    <object>objects\obj_LaserPowerUp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
@@ -52,7 +56,7 @@
     <room>rooms\rm_GameOver</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.0253108102</constant>
+    <constant name="GM_build_date">41876.0686999884</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

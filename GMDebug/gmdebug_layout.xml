@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Panel Type="eVertical" Width="1184" Height="687" Distance="587">
+<Panel Type="eVertical" Width="1184" Height="687" Distance="586">
   <Left>
     <Panel Type="eNone">
       <Window Type="Source">
@@ -8,7 +8,7 @@
     </Panel>
   </Left>
   <Right>
-    <Panel Type="eHorizontal" Width="593" Height="687" Distance="339">
+    <Panel Type="eHorizontal" Width="594" Height="687" Distance="338">
       <Left>
         <Panel Type="eNone">
           <Window Type="Globals" />
