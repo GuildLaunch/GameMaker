@@ -54,6 +54,9 @@
     <object>objects\obj_ShieldPowerUp</object>
     <object>objects\obj_LaserPowerUp</object>
     <object>objects\obj_Credits</object>
+    <object>objects\obj_ShieldDummy</object>
+    <object>objects\obj_MissileDummy</object>
+    <object>objects\obj_LaserDummy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
