@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
-globalvar rateOfFire;
+            <string>globalvar rateOfFire;
 globalvar rateOfFireInit;
 globalvar noShots;
 globalvar missilesActive;
@@ -156,8 +155,18 @@ if (laserPowerUp &gt; 0)
         laserPowerUpNoShot+=1;
     }else{
         laserPowerUpNoShot = 0;
-        instance_create(x+5,y+30,obj_Laser);
-        instance_create(x+5,y-30,obj_Laser);
+        ls_instance = instance_create(x+5,y+30,obj_Laser);
+        with (ls_instance) {
+            direction = 30;
+            speed = 25;
+             image_angle = direction;    
+        }
+        ls_instance = instance_create(x+5,y-30,obj_Laser);
+        with (ls_instance) {
+            direction = 330;
+            speed = 25;
+            image_angle = direction;             
+        }
     }
 } 
 laserPowerUp-=1;
