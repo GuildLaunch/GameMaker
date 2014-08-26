@@ -229,7 +229,11 @@ if (levelCounter = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>laserPowerUp = 300;
+            <string>if (laserPowerUp &lt;= 0)
+{
+laserPowerUp = 0;
+}
+laserPowerUp+=300;
 </string>
           </argument>
         </arguments>

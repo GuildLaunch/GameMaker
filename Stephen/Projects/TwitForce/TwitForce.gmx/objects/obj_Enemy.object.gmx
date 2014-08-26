@@ -51,6 +51,13 @@ if (level &gt; 15 &amp;&amp; irandom(20) == 5)
     sprite_index = spr_EnemySaucer;
     enemy_health = 2;
 }
+if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; irandom(15) == 5))
+{
+    speed = 12;
+    if (level &gt; 60){
+        speed = 15;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -78,13 +85,13 @@ if (level &gt; 15 &amp;&amp; irandom(20) == 5)
     // 985
     if (random_range(1,1000) &gt; 95 &amp;&amp; lastMissile &lt; 1)
     {
-        power_up_type = irandom(3);
+        power_up_type = irandom(4);
         if (power_up_type == 0)
         {
             instance_create(x,y,obj_PowerUpMissile);
         }else if (power_up_type == 2){
             instance_create(x,y,obj_ShieldPowerUp);
-        }else if (power_up_type == 3){
+        }else if (power_up_type &gt;= 3){
             instance_create(x,y,obj_LaserPowerUp);    
         }
         lastMissile = 150;
