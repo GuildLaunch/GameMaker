@@ -115,7 +115,7 @@ if (level &gt; 15 &amp;&amp; irandom(20) == 5)
             <string>if (x &lt; -150)
 {
 instance_destroy();
-score-=10;
+score-=5;
 }
 </string>
           </argument>
