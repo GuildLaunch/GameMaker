@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TPE>
+  <w>64</w>
+  <h>64</h>
+  <name>Default</name>
+  <hasAlpha>True</hasAlpha>
+  <hash>1078540090</hash>
+  <xoffset>2</xoffset>
+  <yoffset>2</yoffset>
+  <cropWidth>64</cropWidth>
+  <cropHeight>64</cropHeight>
+  <ow>68</ow>
+  <oh>68</oh>
+  <image>spr_EnemySaucer_0.tpe.png</image>
+</TPE>
