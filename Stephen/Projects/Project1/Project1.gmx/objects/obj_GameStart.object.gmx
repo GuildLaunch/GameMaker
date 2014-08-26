@@ -81,8 +81,16 @@ room_goto(rm_Game);
 if (game_version != current_version){
     extra_text = " Current Version " + string(current_version) + " at http://www.TwitForce.com/";
 }
-
+draw_set_halign(fa_center);
+draw_set_font(fontXXL);
+draw_text_transformed_color(room_width/2,100,"The Twit Force",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_set_font(fontLarge);
+draw_text_transformed_color(room_width/2,275,"Press A To Play",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_font(fontSmall);
+draw_text_transformed_color(room_width/2,380,"Power Ups",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2-325,500,"Shield",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2,500,"Missiles",1,1,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(room_width/2+325,500,"Laser",1,1,0,c_white,c_white,c_white,c_white,1);
 draw_set_halign(fa_left);
 draw_text_transformed_color(0+20,room_height-40,"Version: " + string(game_version) + extra_text,1,1,0,c_white,c_white,c_white,c_white,1);
 </string>
