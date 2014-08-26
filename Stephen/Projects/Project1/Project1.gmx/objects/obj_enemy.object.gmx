@@ -46,7 +46,7 @@
           <argument>
             <kind>1</kind>
             <string>enemy_health = 1;
-if (level &gt; 15 &amp;&amp; irandom(1,10) == 5)
+if (level &gt; 15 &amp;&amp; irandom(20) == 5)
 {
     sprite_index = spr_EnemySaucer;
     enemy_health = 2;
