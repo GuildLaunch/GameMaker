@@ -157,13 +157,13 @@ if (laserPowerUp &gt; 0)
         laserPowerUpNoShot = 0;
         ls_instance = instance_create(x+5,y+30,obj_Laser);
         with (ls_instance) {
-            direction = 30;
+            direction = 330;
             speed = 25;
             image_angle = direction;    
         }
         ls_instance = instance_create(x+5,y-30,obj_Laser);
         with (ls_instance) {
-            direction = 330;
+            direction = 30;
             speed = 25;
             image_angle = direction;             
         }

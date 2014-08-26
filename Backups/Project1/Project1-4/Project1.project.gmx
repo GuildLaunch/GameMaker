@@ -62,7 +62,7 @@
     <room>rooms\rm_Credits</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41876.991608912</constant>
+    <constant name="GM_build_date">41876.9940097685</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
