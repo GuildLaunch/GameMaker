@@ -8,6 +8,7 @@
     <sound>sound\snd_Music</sound>
     <sound>sound\snd_Missile</sound>
     <sound>sound\snd_Laser</sound>
+    <sound>sound\snd_Laser2</sound>
     <sound>sound\snd_Explode</sound>
   </sounds>
   <sprites name="sprites">
@@ -65,7 +66,7 @@
     <room>rooms\rm_Credits</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41877.1059844213</constant>
+    <constant name="GM_build_date">41878.4924374653</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

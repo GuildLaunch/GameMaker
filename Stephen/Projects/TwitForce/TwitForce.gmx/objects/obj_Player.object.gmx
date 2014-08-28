@@ -29,10 +29,16 @@
 globalvar rateOfFireInit;
 globalvar noShots;
 globalvar missilesActive;
-globalvar lastMissile;
 globalvar shieldActive;
+globalvar powerUpLevel;
+globalvar rateOfFireBase;
+rateOfFireBase = 15;
+rateOfFireFast = 8;
+rateOfFireMissile = 50;
+
+
+powerUpLevel = 0;
 shieldActive = 0;
-lastMissile = 10;
 rateOfFireInit = 10;
 rateOfFire = rateOfFireInit;
 noShots = 0;
@@ -138,55 +144,86 @@ if (horizontal_value &gt; 0.2 || vertical_value &gt; 0.2 || horizontal_value &lt
        y+=new_y_mod;
     }    
 }
-
-if (noShots &lt; rateOfFire)
+/*********************
+Lasers
+***/
+if (powerUpLevel == 0)
 {
-noShots+=1;
+    if (totalSteps % rateOfFireBase == 0)
+    {
+        instance_create(x+5,y,obj_Laser);
+    }
+}else if (powerUpLevel &gt; 0){
+    if (totalSteps % rateOfFireFast == 0)
+    {
+        instance_create(x+5,y,obj_Laser);
+    }
 }
-else
+
+/****************************
+Missiles
+********/
+if (powerUpLevel &gt; 1)
 {
-noShots = 0;
-instance_create(x+5,y,obj_Laser);
+    if (totalSteps % rateOfFireMissile == 0)
+    {
+        instance_create(x+5,y,obj_Missile);
+    }
 }
 
-if (laserPowerUp &gt; 0)
+/********************************
+Tri Blaster
+*************/
+if (powerUpLevel &gt; 2)
 {
-    if (laserPowerUpNoShot &lt; laserPowerUpRateOfFire){
-        laserPowerUpNoShot+=1;
-    }else{
-        laserPowerUpNoShot = 0;
+    if (totalSteps % rateOfFireBase == 0)
+    {
         ls_instance = instance_create(x+5,y+30,obj_Laser);
         with (ls_instance) {
-            direction = 345;
+            direction = 355;
             speed = 25;
             image_angle = direction;    
         }
         ls_instance = instance_create(x+5,y-30,obj_Laser);
         with (ls_instance) {
-            direction = 15;
+            direction = 5;
             speed = 25;
             image_angle = direction;             
         }
     }
-} 
-laserPowerUp-=1;
-if (missilesActive == 1)
+}
+
+/********************************
+Doom Laser
+*************/
+
+if (powerUpLevel &gt; 3)
 {
-    if (missileCount &gt; maxMissileCount){
-        rand_spawn_point = choose(40,0,-40);
-        instance_create(x+10,y+rand_spawn_point,obj_Missile);
-        missileCount = 0;
-    }else{
-        missileCount+=1;
-    }
-    missileTimer-=1;
-    if (missileTimer &lt; 0)
+    if (totalSteps % rateOfFireBase == 0)
     {
-        missilesActive = 0;
-        missilePowerupLevel = 0;
+        ls_instance = instance_create(x+5,y+10,obj_Laser);
+        with (ls_instance) {
+            direction = 0;
+            speed = 25;
+            image_angle = direction;    
+        }
+        ls_instance = instance_create(x+5,y-10,obj_Laser);
+        with (ls_instance) {
+            direction = 0;
+            speed = 25;
+            image_angle = direction;             
+        }
     }
 }
-lastMissile-=1;
+
+/********************************
+Doom Missiles
+*************/
+
+if (powerUpLevel &gt; 5)
+{
+    rateOfFireMissile = 20;
+}
 
 if (shieldActive &gt; 0)
 {
@@ -229,11 +266,11 @@ if (levelCounter = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (laserPowerUp &lt;= 0)
+            <string>powerUpLevel+=1;
+if (powerUpLevel == 4)
 {
-laserPowerUp = 0;
+    rateOfFireBase-=5;
 }
-laserPowerUp+=300;
 </string>
           </argument>
         </arguments>
@@ -256,37 +293,9 @@ laserPowerUp+=300;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shieldActive=1;</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_PowerUpMissile">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>missilesActive = 1;
-missilePowerupLevel+=1;
-if (missilePowerupLevel &gt; 0)
+            <string>if (shieldActive &lt; 3)
 {
-maxMissileCount = 10;
-}
-if (missilePowerupLevel &lt; 3)
-{
-missileTimer+=missileTimerInit;
+    shieldActive+=1;
 }
 </string>
           </argument>

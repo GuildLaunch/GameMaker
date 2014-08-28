@@ -36,6 +36,8 @@ globalvar levelCounterInit;
 levelCounterInit = 100;
 globalvar levelCounter;
 levelCounter = levelCounterInit;
+globalvar totalSteps;
+totalSteps = 0;
 </string>
           </argument>
         </arguments>
@@ -58,7 +60,8 @@ levelCounter = levelCounterInit;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>totalSteps+=1;
+</string>
           </argument>
         </arguments>
       </action>

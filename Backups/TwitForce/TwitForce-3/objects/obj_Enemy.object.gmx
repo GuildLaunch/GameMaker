@@ -19,7 +19,7 @@
         <exetype>1</exetype>
         <functionname>action_set_hspeed</functionname>
         <codestring></codestring>
-        <whoName>other</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -45,17 +45,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemy_health = 1;
+            <string>movement_type = 1;
+base_health = 1;
+enemy_health = base_health + 0;
+if (level &gt; 40)
+{
+    enemy_health = base_health + 0; // we could add base health based on level... but frankly I foudn this to be NOT fun
+}
 if (level &gt; 15 &amp;&amp; irandom(20) == 5)
 {
     sprite_index = spr_EnemySaucer;
-    enemy_health = 2;
+    enemy_health = base_health + 2;
 }
-if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; irandom(10) == 5))
+if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; irandom(15) == 5))
 {
     speed = 12;
     if (level &gt; 60){
         speed = 15;
+    }
+}
+
+// wobbly ships
+if (level &gt; 15)
+{
+    if (irandom(19) == 1)
+    {
+        movement_type = 2;
+        speed = 15;
+        vspeed=4;
+    }
+    
+    if (level &gt; 30)
+    {
+        if (irandom(10) == 1)
+        {
+            movement_type = 2;
+            speed = 20;
+            vspeed=6;
+        }
     }
 }
 </string>
@@ -83,18 +110,17 @@ if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; ira
             <string>if (x &gt; 10)
 {
     // 985
-    if (random_range(1,1000) &gt; 95 &amp;&amp; lastMissile &lt; 1)
+    if !instance_exists(obj_ShieldPowerUp) &amp;&amp; !instance_exists(obj_LaserPowerUp)
     {
-        power_up_type = irandom(4);
-        if (power_up_type == 0)
+        if (irandom(50) == 2 &amp;&amp; (totalSteps % 25 == 0 || 1 == 1)) //disabling the time gate
         {
-            instance_create(x,y,obj_PowerUpMissile);
-        }else if (power_up_type == 2){
-            instance_create(x,y,obj_ShieldPowerUp);
-        }else if (power_up_type &gt;= 3){
-            instance_create(x,y,obj_LaserPowerUp);    
+            if (irandom(10) &lt; 2)
+            {
+                instance_create(x,y,obj_ShieldPowerUp);
+            }else{
+                instance_create(x,y,obj_LaserPowerUp);
+            }
         }
-        lastMissile = 150;
     }
 }
 </string>
@@ -123,6 +149,20 @@ if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; ira
 {
 instance_destroy();
 score-=5;
+}
+if (movement_type == 2)
+{
+    //if (totalSteps % 36 == 0)
+    //{
+        if (ystart - y &lt; -60)
+        {
+            vspeed = -4;   
+        }
+        if (ystart - y &gt; 60)
+        {
+            vspeed = 4;   
+        }
+    //}
 }
 </string>
           </argument>
