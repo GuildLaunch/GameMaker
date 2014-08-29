@@ -48,6 +48,8 @@
             <string>movement_type = 1;
 base_health = 1;
 enemy_health = base_health + 0;
+fire_chance = 1000;
+fire_rate = 0;
 if (level &gt; 40)
 {
     enemy_health = base_health + 0; // we could add base health based on level... but frankly I foudn this to be NOT fun
@@ -62,6 +64,22 @@ if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; ira
     speed = 12;
     if (level &gt; 60){
         speed = 15;
+    }
+}
+
+if (level &gt; 20)
+{
+    fire_chance = 20;
+    if (irandom(fire_chance) == 1) {// this can zero, meaning it doesn't happen
+        fire_rate = 36;
+    }
+}
+
+if (level &gt; 50)
+{
+    fire_chance = 100;
+    if (irandom(fire_chance) == 1) {// this can zero, meaning it doesn't happen
+        fire_rate = 36;
     }
 }
 
@@ -84,6 +102,12 @@ if (level &gt; 15)
             vspeed=6;
         }
     }
+}
+
+if (level &gt; 15 &amp;&amp; irandom(20) == 5)
+{
+    sprite_index = spr_EnemySaucer;
+    enemy_health = base_health + 2;
 }
 </string>
           </argument>
@@ -112,7 +136,7 @@ if (level &gt; 15)
     // 985
     if !instance_exists(obj_ShieldPowerUp) &amp;&amp; !instance_exists(obj_LaserPowerUp)
     {
-        if (irandom(50) == 2 &amp;&amp; (totalSteps % 25 == 0 || 1 == 1)) //disabling the time gate
+        if (irandom(40) == 2 &amp;&amp; (totalSteps % 25 == 0 || 1 == 1)) //disabling the time gate
         {
             if (irandom(10) &lt; 2)
             {
@@ -163,6 +187,14 @@ if (movement_type == 2)
             vspeed = 4;   
         }
     //}
+}
+
+if (fire_rate &gt; 0)
+{
+    if (totalSteps % fire_rate == 0)
+    {
+        instance_create(x-10,y,obj_EnemyBullet);
+    }
 }
 </string>
           </argument>

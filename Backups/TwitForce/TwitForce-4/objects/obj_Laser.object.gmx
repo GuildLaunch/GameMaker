@@ -26,11 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>speed = 35;
-if (!audio_is_playing(snd_Laser)){
-    audio_play_sound(snd_Laser, 6, false);
-}else if (!audio_is_playing(snd_Laser2)){
-    audio_play_sound(snd_Laser2, 6, false);
-}
 </string>
           </argument>
         </arguments>

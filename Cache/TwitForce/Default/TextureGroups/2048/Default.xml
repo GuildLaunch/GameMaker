@@ -2,16 +2,16 @@
 <TextureGroup>
   <texture scale="1">Default_0.png</texture>
   <texture scale="1">Default_1.png</texture>
-  <tpe x="2" y="2" tpage="Default_0" entry="21">fontXXL.tpe</tpe>
-  <tpe x="4" y="1032" tpage="Default_0" entry="15">bg_Space2.tpe</tpe>
-  <tpe x="4" y="4" tpage="Default_1" entry="16">bg_StartMenu.tpe</tpe>
-  <tpe x="4" y="732" tpage="Default_1" entry="17">bg_GameOver.tpe</tpe>
-  <tpe x="1290" y="2" tpage="Default_0" entry="22">fontXL.tpe</tpe>
-  <tpe x="1292" y="520" tpage="Default_0" entry="14">bg_Space.tpe</tpe>
-  <tpe x="2" y="1758" tpage="Default_0" entry="18">fontLarge.tpe</tpe>
-  <tpe x="1030" y="2" tpage="Default_0" entry="19">fontSmall.tpe</tpe>
+  <tpe x="2" y="2" tpage="Default_0" entry="22">fontXXL.tpe</tpe>
+  <tpe x="4" y="1032" tpage="Default_0" entry="16">bg_Space2.tpe</tpe>
+  <tpe x="4" y="4" tpage="Default_1" entry="17">bg_StartMenu.tpe</tpe>
+  <tpe x="4" y="732" tpage="Default_1" entry="18">bg_GameOver.tpe</tpe>
+  <tpe x="1290" y="2" tpage="Default_0" entry="23">fontXL.tpe</tpe>
+  <tpe x="1292" y="520" tpage="Default_0" entry="15">bg_Space.tpe</tpe>
+  <tpe x="2" y="1758" tpage="Default_0" entry="19">fontLarge.tpe</tpe>
+  <tpe x="1030" y="2" tpage="Default_0" entry="20">fontSmall.tpe</tpe>
   <tpe x="1838" y="2" tpage="Default_0" entry="10">spr_PlayerShielded_0.tpe</tpe>
-  <tpe x="518" y="1758" tpage="Default_0" entry="20">fontXS.tpe</tpe>
+  <tpe x="518" y="1758" tpage="Default_0" entry="21">fontXS.tpe</tpe>
   <tpe x="1030" y="262" tpage="Default_0" entry="0">spr_Player_0.tpe</tpe>
   <tpe x="1030" y="934" tpage="Default_0" entry="6">spr_Splosion_2.tpe</tpe>
   <tpe x="1962" y="2" tpage="Default_0" entry="7">spr_Splosion_3.tpe</tpe>
@@ -24,5 +24,6 @@
   <tpe x="1962" y="86" tpage="Default_0" entry="8">spr_Missile_0.tpe</tpe>
   <tpe x="1806" y="2" tpage="Default_0" entry="1">spr_Enemy_0.tpe</tpe>
   <tpe x="1922" y="158" tpage="Default_0" entry="2">spr_Spawn_0.tpe</tpe>
-  <tpe x="2" y="2018" tpage="Default_0" entry="3">spr_Laser_0.tpe</tpe>
+  <tpe x="2" y="2018" tpage="Default_0" entry="14">spr_EnemyBullet_0.tpe</tpe>
+  <tpe x="1030" y="1018" tpage="Default_0" entry="3">spr_Laser_0.tpe</tpe>
 </TextureGroup>

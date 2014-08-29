@@ -23,6 +23,7 @@
     <sprite>sprites\spr_ShieldPowerUp</sprite>
     <sprite>sprites\spr_LaserPowerUp</sprite>
     <sprite>sprites\spr_EnemySaucer</sprite>
+    <sprite>sprites\spr_EnemyBullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -58,6 +59,7 @@
     <object>objects\obj_ShieldDummy</object>
     <object>objects\obj_MissileDummy</object>
     <object>objects\obj_LaserDummy</object>
+    <object>objects\obj_EnemyBullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
@@ -66,7 +68,7 @@
     <room>rooms\rm_Credits</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41878.4955848148</constant>
+    <constant name="GM_build_date">41880.0986302315</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>
