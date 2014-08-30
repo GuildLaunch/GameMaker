@@ -67,11 +67,19 @@ if ((level &gt; 50 &amp;&amp; irandom(20) == 5) || (level &gt; 80 &amp;&amp; ira
     }
 }
 
-if (level &gt; 50)
+if (level &gt; 10)
 {
-    fire_chance = 100;
+    fire_chance = 20;
     if (irandom(fire_chance) == 1) {// this can zero, meaning it doesn't happen
-        fire_rate = 36;
+        fire_rate = 72;
+    }
+}
+
+if (level &gt; 30)
+{
+    fire_chance = 10;
+    if (irandom(fire_chance) == 1) {// this can zero, meaning it doesn't happen
+        fire_rate = 50;
     }
 }
 
@@ -128,7 +136,7 @@ if (level &gt; 15 &amp;&amp; irandom(20) == 5)
     // 985
     if !instance_exists(obj_ShieldPowerUp) &amp;&amp; !instance_exists(obj_LaserPowerUp)
     {
-        if (irandom(40) == 2 &amp;&amp; (totalSteps % 25 == 0 || 1 == 1)) //disabling the time gate
+        if (irandom(45) == 2 &amp;&amp; (totalSteps % 25 == 0 || 1 == 1)) //disabling the time gate
         {
             if (irandom(10) &lt; 2)
             {
