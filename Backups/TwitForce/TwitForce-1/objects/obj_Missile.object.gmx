@@ -53,17 +53,21 @@
 lifetime=0;
 temp_dir = random_range(-50,50);
 seek_distance = x+600;
-if (seek_distance &gt; 1110)
-{
-    seek_distance = 1100;
+if (seek_distance &gt; 900){
+    seek_distance = 900;
 }
-enemy=instance_nearest(seek_distance,y+temp_dir,obj_Enemy);
-if (temp_dir &gt; 0)
-{
+
+enemy = instance_nearest(seek_distance,y+temp_dir,obj_Enemy);
+if (enemy == noone){
+    enemy = instance_nearest(seek_distance,y+temp_dir,obj_Boss1);
+}
+
+if (temp_dir &gt; 0){
     direction = temp_dir;
 }else{
     direction = 360 + temp_dir;
 }
+
 //direction = 320;
 motion_set(direction,25);
 </string>
@@ -126,6 +130,41 @@ lifetime+=1;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_Boss1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(other){
+    enemy_health-=1;
+    if (enemy_health &lt; 1)
+    {
+        score+=10;
+        instance_create(x,y,obj_Splosion);
+        instance_destroy();
+    }else{
+        audio_play_sound(snd_metalImpact,9,false);
+    }
+}
+instance_destroy();
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_Enemy">
       <action>
         <libid>1</libid>
@@ -150,6 +189,8 @@ lifetime+=1;
         score+=10;
         instance_create(x,y,obj_Splosion);
         instance_destroy();
+    }else{
+        audio_play_sound(snd_metalImpact,9,false);
     }
 }
 instance_destroy();

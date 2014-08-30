@@ -10,6 +10,7 @@
     <sound>sound\snd_Laser</sound>
     <sound>sound\snd_Laser2</sound>
     <sound>sound\snd_Explode</sound>
+    <sound>sound\snd_metalImpact</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Player</sprite>
@@ -23,7 +24,9 @@
     <sprite>sprites\spr_ShieldPowerUp</sprite>
     <sprite>sprites\spr_LaserPowerUp</sprite>
     <sprite>sprites\spr_EnemySaucer</sprite>
+    <sprite>sprites\spr_SmallAsteroid</sprite>
     <sprite>sprites\spr_EnemyBullet</sprite>
+    <sprite>sprites\spr_Boss1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_Space</background>
@@ -59,7 +62,10 @@
     <object>objects\obj_ShieldDummy</object>
     <object>objects\obj_MissileDummy</object>
     <object>objects\obj_LaserDummy</object>
+    <object>objects\obj_SmallAsteroid</object>
+    <object>objects\obj_AsteroidSpawn</object>
     <object>objects\obj_EnemyBullet</object>
+    <object>objects\obj_Boss1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Start</room>
@@ -68,7 +74,7 @@
     <room>rooms\rm_Credits</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41880.4806658333</constant>
+    <constant name="GM_build_date">41881.8827423843</constant>
     <constant name="GM_version">'1.0.0.0'</constant>
   </constants>
   <help>

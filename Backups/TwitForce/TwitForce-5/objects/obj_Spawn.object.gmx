@@ -31,6 +31,7 @@ globalvar noShips;
 rateOfSpawnInit = 15;
 rateOfSpawn = rateOfSpawnInit;
 noShips = 0;
+spawnCounter = 0;
 </string>
           </argument>
         </arguments>
@@ -53,41 +54,60 @@ noShips = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (noShips &lt; rateOfSpawn)
-{
-noShips+=1;
-}
-else
-{
-noShips = 0;
-y_spawn = random_range(30,room_height-100);
-///y_spawn = 40; ///room_height-100;
+            <string>y_spawn = random_range(30,room_height-100);
 x_spawn = 1290;
-spawn_type = random_range(0,level*3); 
-if (spawn_type &lt;= 6 || spawn_type &gt; 18 &amp;&amp; spawn_type &lt; 50)
+spawn_type = random_range(0,level*3);
+if (level == 15 &amp;&amp; gamePhase &lt; 2)
 {
-    instance_create(x_spawn,y_spawn,obj_Enemy);
-}else if spawn_type &gt; 4 &amp;&amp; spawn_type &lt; 12{
-    if (y_spawn &gt; 400)
-    {
-        instance_create(x_spawn,y_spawn,obj_Enemy);
-        instance_create(x_spawn,y_spawn-60,obj_Enemy);    
-    }else{
-        instance_create(x_spawn,y_spawn,obj_Enemy);
-        instance_create(x_spawn,y_spawn+60,obj_Enemy);    
-    }
-}else{
-    if (y_spawn &gt; 400)
-    {
-        instance_create(x_spawn+40,y_spawn-80,obj_Enemy);
-        instance_create(x_spawn,y_spawn-40,obj_Enemy);
-        instance_create(x_spawn+40,y_spawn,obj_Enemy);
-    }else{
-        instance_create(x_spawn+40,y_spawn+80,obj_Enemy);
-        instance_create(x_spawn,y_spawn+40,obj_Enemy);
-        instance_create(x_spawn+40,y_spawn,obj_Enemy);
-    }
+    gamePhase = 2;
 }
+switch (gamePhase){
+    case 1:
+    case 5:
+        if (noShips &lt; rateOfSpawn){
+            noShips+=1;
+        }else{
+            noShips = 0; 
+            if (spawn_type &lt;= 6 || spawn_type &gt; 18 &amp;&amp; spawn_type &lt; 50)
+            {
+                instance_create(x_spawn,y_spawn,obj_Enemy);
+            }else if spawn_type &gt; 4 &amp;&amp; spawn_type &lt; 12{
+                if (y_spawn &gt; 400)
+                {
+                    instance_create(x_spawn,y_spawn,obj_Enemy);
+                    instance_create(x_spawn,y_spawn-60,obj_Enemy);    
+                }else{
+                    instance_create(x_spawn,y_spawn,obj_Enemy);
+                    instance_create(x_spawn,y_spawn+60,obj_Enemy);    
+                }
+            }else{
+                if (y_spawn &gt; 400)
+                {
+                    instance_create(x_spawn+40,y_spawn-80,obj_Enemy);
+                    instance_create(x_spawn,y_spawn-40,obj_Enemy);
+                    instance_create(x_spawn+40,y_spawn,obj_Enemy);
+                }else{
+                    instance_create(x_spawn+40,y_spawn+80,obj_Enemy);
+                    instance_create(x_spawn,y_spawn+40,obj_Enemy);
+                    instance_create(x_spawn+40,y_spawn,obj_Enemy);
+                }
+            }
+        }
+        break;
+    case 2:
+        gamePhase = 3;
+        spawnCounter = 120;
+        break;
+    case 3:
+        if (spawnCounter &lt;= 0)
+        {
+            instance_create(1290,350,obj_Boss1);
+            gamePhase = 4;
+        }else{
+            spawnCounter-=1;
+        }
+        
+        break;
 }
 </string>
           </argument>

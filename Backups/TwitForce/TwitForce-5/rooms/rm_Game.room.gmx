@@ -56,6 +56,7 @@
     <instance objName="obj_Spawn" x="1344" y="320" name="inst_897FA7B8" locked="0" code="" scaleX="0.400000005960464" scaleY="0.438775509595871" colour="4294967295" rotation="0"/>
     <instance objName="obj_TwitterPump" x="-96" y="352" name="inst_EEB72F02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_BackgroundSound" x="-64" y="384" name="inst_F00B12D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_SmallAsteroid" x="1344" y="384" name="inst_9FEB5C9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
